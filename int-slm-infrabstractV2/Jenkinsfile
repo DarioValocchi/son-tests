@@ -41,11 +41,7 @@ node {
         /* Must re-throw exception to propagate error */
         if (err) {
             throw err
-        } else {
-	 docker tag registry.sonata-nfv.eu:5000/son-sp-infrabstract:dev sonatanfv/son-sp-infrabstract:latest 
-	 docker push sonatanfv/son-sp-infrabstract:latest
-        
-        }
+        } 
 
         /* Clean the OpenStack envorinoment */
         sh 'int-slm-infrabstractV2/clean.sh'
