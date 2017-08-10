@@ -184,7 +184,7 @@ class DemoPlugin1(ManoBasePlugin):
         vnfd2_descriptor = open(path_descriptors + 'vBar-vnf-vnfd.yml','r')
         vnfd3_descriptor = open(path_descriptors + 'vFoo-vnf-vnfd.yml','r')
 
-#        service_request = {'NSD': yaml.load(nsd_descriptor), 'VNFD1': yaml.load(vnfd1_descriptor), 'VNFD2': yaml.load(vnfd2_descriptor), 'VNFD3': yaml.load(vnfd3_descriptor)}
+        #service_request = {'NSD': yaml.load(nsd_descriptor), 'VNFD1': yaml.load(vnfd1_descriptor), 'VNFD2': yaml.load(vnfd2_descriptor), 'VNFD3': yaml.load(vnfd3_descriptor)}
         service_request = {'NSD': yaml.load(nsd_descriptor), 'VNFD1': yaml.load(vnfd2_descriptor), 'VNFD2': yaml.load(vnfd3_descriptor)}
         LOG.info("Request created.")
         return yaml.dump(service_request)
